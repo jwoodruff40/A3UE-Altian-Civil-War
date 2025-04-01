@@ -1,14 +1,12 @@
 #include "script_component.hpp"
 
-class CfgPatches 
-{
-    class ADDON 
-    {
+class CfgPatches {
+    class ADDON {
         name = COMPONENT_NAME;
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {QDOUBLES(PREFIX,core)};
+        requiredAddons[] = {};
         author = AUTHOR;
         authors[] = { AUTHORS };
         authorUrl = "";
@@ -16,7 +14,12 @@ class CfgPatches
     };
 };
 
-class A3A 
-{
-    #include "Templates.hpp"
-};
+#include "UILayouts\menu.hpp"
+
+#if __A3_DEBUG__
+    class A3A {
+        #include "CfgFunctions.hpp"
+    };
+#else
+    #include "CfgFunctions.hpp"
+#endif
