@@ -19,154 +19,154 @@
 ["surrenderCrate", "Box_IND_Wps_F"] call _fnc_saveToTemplate; //Changeing this from default will require you to define logistics attachement offset for the box type
 ["equipmentBox", "Box_AAF_Equip_F"] call _fnc_saveToTemplate; //Changeing this from default will require you to define logistics attachement offset for the box type
 
-["vehiclesBasic", ["Flex_CUP_AAF_Quad", 19, "Flex_CUP_AAF_TowingTractor"/*lol*/, 1]] call _fnc_saveToTemplate;
+["vehiclesBasic", ["Flex_CUP_AAF_Quad", "Flex_CUP_AAF_TowingTractor"/*lol*/]] call _fnc_saveToTemplate;
 ["vehiclesLightUnarmed", call {
     if (tierWar < 2) then {
-        ["Flex_CUP_AAF_Tigr233011", 1, "Flex_CUP_AAF_Tigr_233114", 1, "Flex_CUP_AAF_LR_Transport", 3]
+        ["Flex_CUP_AAF_Tigr233011", "Flex_CUP_AAF_Tigr_233114", "Flex_CUP_AAF_LR_Transport"]
     } else {
-        ["Flex_CUP_USA_MRAP", 1, "Flex_CUP_USA_nM1151_Unarmed", 2]
+        ["Flex_CUP_USA_MRAP", "Flex_CUP_USA_nM1151_Unarmed"]
     };
 }] call _fnc_saveToTemplate;
 ["vehiclesLightArmed", call {
     if (tierWar < 2) then {
-        ["Flex_CUP_AAF_Tigr_233114_KORD", 1, "Flex_CUP_AAF_LR_MG", 2, "Flex_CUP_AAF_LR_SF_GMG", 1, "Flex_CUP_AAF_LR_SF_HMG", 1]
+        ["Flex_CUP_AAF_Tigr_233114_KORD", "Flex_CUP_AAF_LR_MG", "Flex_CUP_AAF_LR_SF_GMG", "Flex_CUP_AAF_LR_SF_HMG"]
     } else {
-        ["Flex_CUP_USA_nM1025_SOV_M2", 3, "Flex_CUP_USA_nM1025_SOV_Mk19", 1, "Flex_CUP_USA_nM1151_ogpk_m2", 4, "Flex_CUP_USA_nM1151_ogpk_mk19", 2]
+        ["Flex_CUP_USA_nM1025_SOV_M2", "Flex_CUP_USA_nM1025_SOV_Mk19", "Flex_CUP_USA_nM1151_ogpk_m2", "Flex_CUP_USA_nM1151_ogpk_mk19"]
     };
 }] call _fnc_saveToTemplate;
 ["vehiclesTrucks", call {
     if (tierWar < 2) then {
-        ["Flex_CUP_AAF_Truck_Transport", 1, "Flex_CUP_AAF_Truck_Covered", 1]
+        ["Flex_CUP_AAF_Truck_Transport", "Flex_CUP_AAF_Truck_Covered"]
     } else {
-        ["Flex_CUP_USA_Truck_transport", 1, "Flex_CUP_USA_Truck_covered", 1]
+        ["Flex_CUP_USA_Truck_transport", "Flex_CUP_USA_Truck_covered"]
     };
 }] call _fnc_saveToTemplate;
 ["vehiclesCargoTrucks", call {
     if (tierWar < 2) then {
         []
     } else {
-        ["Flex_CUP_USA_Truck_cargo", 1, "Flex_CUP_USA_Truck_box", 1, "Flex_CUP_USA_Truck_flatbed", 1]
+        ["Flex_CUP_USA_Truck_cargo", "Flex_CUP_USA_Truck_box", "Flex_CUP_USA_Truck_flatbed"]
     };
 }] call _fnc_saveToTemplate;
 ["vehiclesAmmoTrucks", call {
     if (tierWar < 2) then {
-        ["Flex_CUP_AAF_Truck_Ammo", 4, "Flex_CUP_AAF_M113A3_Reammo", 1]
+        ["Flex_CUP_AAF_Truck_Ammo", "Flex_CUP_AAF_M113A3_Reammo"]
     } else {
-        ["Flex_CUP_USA_Truck_ammo", 1]
+        ["Flex_CUP_USA_Truck_ammo"]
     };
 }] call _fnc_saveToTemplate;
 ["vehiclesRepairTrucks", call {
     if (tierWar < 8 ) then {
-        ["Flex_CUP_AAF_Truck_Repair", 4, "Flex_CUP_AAF_M113A3_Repair", 1]
+        ["Flex_CUP_AAF_Truck_Repair", "Flex_CUP_AAF_M113A3_Repair"]
     } else {
-        ["Flex_CUP_USA_Truck_Repair", 1]
+        ["Flex_CUP_USA_Truck_Repair"]
     };
 }] call _fnc_saveToTemplate;
 ["vehiclesFuelTrucks", call {
     if (tierWar < 2) then {
-        ["Flex_CUP_AAF_Truck_Fuel", 1]
+        ["Flex_CUP_AAF_Truck_Fuel"]
     } else {
-        ["Flex_CUP_USA_Truck_Fuel", 1]
+        ["Flex_CUP_USA_Truck_Fuel"]
     };
 }] call _fnc_saveToTemplate;
 ["vehiclesMedical", call {
     if (tierWar < 2) then {
-        ["Flex_CUP_AAF_Truck_Medical", 2, "Flex_CUP_AAF_LR_Ambulance", 2, "Flex_CUP_AAF_M113A3_Med", 1]
+        ["Flex_CUP_AAF_Truck_Medical", "Flex_CUP_AAF_LR_Ambulance", "Flex_CUP_AAF_M113A3_Med"]
     } else {
-        ["Flex_CUP_USA_Truck_medical", 1]
+        ["Flex_CUP_USA_Truck_medical"]
     };
 }] call _fnc_saveToTemplate;
-["vehiclesLightAPCs", ["Flex_CUP_AAF_M113A3", 1, "Flex_CUP_AAF_M113A3_HQ", 1]] call _fnc_saveToTemplate;
-["vehiclesAPCs", ["Flex_CUP_AAF_Warrior", 1]] call _fnc_saveToTemplate;
-["vehiclesIFVs", ["Flex_CUP_AAF_BTR80A", 1]] call _fnc_saveToTemplate;
-["vehiclesTanks", ["Flex_CUP_AAF_Leopard_1A3", 1, "Flex_CUP_AAF_Leopard2A6", 2, "Flex_CUP_AAF_Leopard2A6_ERA", 2]] call _fnc_saveToTemplate;
-["vehiclesAA", ["Flex_CUP_AAF_ZSU23", 1]] call _fnc_saveToTemplate;
-["vehiclesAirborne", ["Flex_CUP_AAF_BTR80A", 1, "Flex_CUP_AAF_M113A3", 2, "Flex_CUP_AAF_M113A3_HQ", 2]] call _fnc_saveToTemplate;
-["vehiclesLightTanks",  ["Flex_CUP_AAF_Warrior", 1]] call _fnc_saveToTemplate;
+["vehiclesLightAPCs", ["Flex_CUP_AAF_M113A3", "Flex_CUP_AAF_M113A3_HQ"]] call _fnc_saveToTemplate;
+["vehiclesAPCs", ["Flex_CUP_AAF_Warrior"]] call _fnc_saveToTemplate;
+["vehiclesIFVs", ["Flex_CUP_AAF_BTR80A"]] call _fnc_saveToTemplate;
+["vehiclesTanks", ["Flex_CUP_AAF_Leopard_1A3", "Flex_CUP_AAF_Leopard2A6", "Flex_CUP_AAF_Leopard2A6_ERA"]] call _fnc_saveToTemplate;
+["vehiclesAA", ["Flex_CUP_AAF_ZSU23"]] call _fnc_saveToTemplate;
+["vehiclesAirborne", ["Flex_CUP_AAF_BTR80A", "Flex_CUP_AAF_M113A3", "Flex_CUP_AAF_M113A3_HQ"]] call _fnc_saveToTemplate;
+["vehiclesLightTanks",  ["Flex_CUP_AAF_Warrior"]] call _fnc_saveToTemplate;
 
-["vehiclesTransportBoats", ["Flex_CUP_AAF_Boat_Transport", 2, "Flex_CUP_AAF_Lifeboat", 1, "Flex_CUP_AAF_RHIB_Unarmed", 2]] call _fnc_saveToTemplate;
-["vehiclesGunBoats", ["Flex_CUP_AAF_RHIB", 12, "Flex_CUP_AAF_RHIB2Turret", 7, "Flex_CUP_AAF_Frigate"/*Can't help it lol*/, 1]] call _fnc_saveToTemplate;
-["vehiclesAmphibious", ["Flex_CUP_AAF_BTR80A", 1, "Flex_CUP_AAF_M113A3", 2, "Flex_CUP_AAF_M113A3_HQ", 2]] call _fnc_saveToTemplate;
+["vehiclesTransportBoats", ["Flex_CUP_AAF_Boat_Transport", "Flex_CUP_AAF_Lifeboat", "Flex_CUP_AAF_RHIB_Unarmed"]] call _fnc_saveToTemplate;
+["vehiclesGunBoats", ["Flex_CUP_AAF_RHIB", "Flex_CUP_AAF_RHIB2Turret", "Flex_CUP_AAF_Frigate"/*Can't help it lol*/]] call _fnc_saveToTemplate;
+["vehiclesAmphibious", ["Flex_CUP_AAF_BTR80A", "Flex_CUP_AAF_M113A3", "Flex_CUP_AAF_M113A3_HQ"]] call _fnc_saveToTemplate;
 
 ["vehiclesPlanesCAS", call {
     if (tierWar < 2) then {
-        ["Flex_CUP_AAF_Plane_Fighter", 1, "Flex_CUP_AAF_Plane_Fighter_2", 1]
+        ["Flex_CUP_AAF_Plane_Fighter", "Flex_CUP_AAF_Plane_Fighter_2"]
     } else {
-        ["Flex_CUP_USA_A10", 1]
+        ["Flex_CUP_USA_A10"]
     };
 }] call _fnc_saveToTemplate;
-["vehiclesPlanesAA", ["Flex_CUP_AAF_Fighter", 1]] call _fnc_saveToTemplate;
-["vehiclesPlanesTransport", ["Flex_CUP_AAF_C130J", 1]] call _fnc_saveToTemplate;
+["vehiclesPlanesAA", ["Flex_CUP_AAF_Fighter"]] call _fnc_saveToTemplate;
+["vehiclesPlanesTransport", ["Flex_CUP_AAF_C130J"]] call _fnc_saveToTemplate;
 
 ["vehiclesHelisLight", call {
     if (tierWar < 2) then {
-        ["Flex_CUP_AAF_Heli_Unarmed", 1]
+        ["Flex_CUP_AAF_Heli_Unarmed"]
     } else {
-        ["Flex_CUP_USA_MH6J", 1, "Flex_CUP_USA_MH6M_OBS", 1]
+        ["Flex_CUP_USA_MH6J", "Flex_CUP_USA_MH6M_OBS"]
     };
 }] call _fnc_saveToTemplate;
 ["vehiclesHelisTransport", call {
     if (tierWar < 2) then {
-        ["Flex_CUP_AAF_Heli_Unarmed", 5, "Flex_CUP_AAF_Merlin_HC3_Armed", 2, "Flex_CUP_AAF_Merlin_HC3", 2, "Flex_CUP_AAF_Mi24_Mk3", 1]
+        ["Flex_CUP_AAF_Heli_Unarmed", "Flex_CUP_AAF_Merlin_HC3_Armed", "Flex_CUP_AAF_Merlin_HC3", "Flex_CUP_AAF_Mi24_Mk3"]
     } else {
-        ["Flex_CUP_USA_MH47E", 3, "Flex_CUP_USA_UH60M", 5, "Flex_CUP_USA_UH60M_FFV", 4, "Flex_CUP_USA_UH60M_Unarmed", 1, "Flex_CUP_USA_Unarmed_FFV", 2]
+        ["Flex_CUP_USA_MH47E", "Flex_CUP_USA_UH60M", "Flex_CUP_USA_UH60M_FFV", "Flex_CUP_USA_UH60M_Unarmed", "Flex_CUP_USA_Unarmed_FFV"]
     };
 }] call _fnc_saveToTemplate;
 ["vehiclesHelisLightAttack", call {
     if (tierWar < 2) then {
-        ["Flex_CUP_AAF_Heli_dynamicLoadout", 1]
+        ["Flex_CUP_AAF_Heli_dynamicLoadout"]
     } else {
-        ["Flex_CUP_USA_AH6M", 1]
+        ["Flex_CUP_USA_AH6M"]
     };
 }] call _fnc_saveToTemplate;
-["vehiclesHelisAttack", ["Flex_CUP_AAF_Mi24_Mk3", 1]] call _fnc_saveToTemplate;
+["vehiclesHelisAttack", ["Flex_CUP_AAF_Mi24_Mk3"]] call _fnc_saveToTemplate;
 
 ["vehiclesAirPatrol", call {
     if (tierWar < 2) then {
-        ["Flex_CUP_AAF_Heli_Unarmed", 1, "Flex_CUP_AAF_Merlin_HC3_Armed", 3, "Flex_CUP_AAF_Merlin_HC3", 1]
+        ["Flex_CUP_AAF_Heli_Unarmed", "Flex_CUP_AAF_Merlin_HC3_Armed", "Flex_CUP_AAF_Merlin_HC3"]
     } else {
-        ["Flex_CUP_USA_UH60M", 3, "Flex_CUP_UH60M_FFV", 2]
+        ["Flex_CUP_USA_UH60M", "Flex_CUP_UH60M_FFV"]
     };
 }] call _fnc_saveToTemplate;
 
-["vehiclesArtillery", ["Flex_CUP_AAF_Truck_MRL", 1]] call _fnc_saveToTemplate;
+["vehiclesArtillery", ["Flex_CUP_AAF_Truck_MRL"]] call _fnc_saveToTemplate;
 ["magazines", createHashMapFromArray [["Flex_CUP_AAF_Truck_MRL", ["12Rnd_230mm_rockets", "12Rnd_230mm_rockets_cluster"]]]] call _fnc_saveToTemplate;
 
 ["uavsAttack", call {
     if (tierWar < 2) then {
-        ["Flex_CUP_AAF_UAV_02_dynamicLoadout", 1]
+        ["Flex_CUP_AAF_UAV_02_dynamicLoadout"]
     } else {
-        ["Flex_CUP_USA_UAV_MQ9", 1]
+        ["Flex_CUP_USA_UAV_MQ9"]
     };
 }] call _fnc_saveToTemplate;
-["uavsPortable", ["Flex_CUP_AAF_UAV_06", 1, "Flex_CUP_AAF_UAV_01", 1]] call _fnc_saveToTemplate;
+["uavsPortable", ["Flex_CUP_AAF_UAV_06", "Flex_CUP_AAF_UAV_01"]] call _fnc_saveToTemplate;
 
-["vehiclesMilitiaLightArmed", ["Flex_CUP_AAF_Tigr_233114_KORD", 4, "Flex_CUP_AAF_LR_MG", 1]] call _fnc_saveToTemplate;
-["vehiclesMilitiaTrucks", ["Flex_CUP_AAF_Truck_Transport", 1, "Flex_CUP_AAF_Truck_Covered", 1]] call _fnc_saveToTemplate;
-["vehiclesMilitiaCars", ["Flex_CUP_AAF_Tigr233011", 2, "Flex_CUP_AAF_Tigr_233114", 2, "Flex_CUP_AAF_LR_Transport", 1]] call _fnc_saveToTemplate;
-["vehiclesMilitiaAPCs", ["Flex_CUP_AAF_BTR80A", 1]] call _fnc_saveToTemplate;
+["vehiclesMilitiaLightArmed", ["Flex_CUP_AAF_Tigr_233114_KORD", "Flex_CUP_AAF_LR_MG"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaTrucks", ["Flex_CUP_AAF_Truck_Transport", "Flex_CUP_AAF_Truck_Covered"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaCars", ["Flex_CUP_AAF_Tigr233011", "Flex_CUP_AAF_Tigr_233114", "Flex_CUP_AAF_LR_Transport"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaAPCs", ["Flex_CUP_AAF_BTR80A"]] call _fnc_saveToTemplate;
 
-["vehiclesPolice", ["Flex_CUP_AAF_Tigr_233034", 1]] call _fnc_saveToTemplate;
+["vehiclesPolice", ["Flex_CUP_AAF_Tigr_233034"]] call _fnc_saveToTemplate;
 
-["staticMGs", ["Flex_CUP_AAF_HMG_high", 1]] call _fnc_saveToTemplate;
+["staticMGs", ["Flex_CUP_AAF_HMG_high"]] call _fnc_saveToTemplate;
 ["staticAT", call {
     if (tierWar < 2) then {
-        ["Flex_CUP_AAF_Kornet", 2, "Flex_CUP_AAF_Metis", 1]
+        ["Flex_CUP_AAF_Kornet", "Flex_CUP_AAF_Metis"]
     } else {
-        ["Flex_CUP_USA_TOW", 1, "Flex_CUP_USA_TOW2", 1]
+        ["Flex_CUP_USA_TOW", "Flex_CUP_USA_TOW2"]
     };
 }] call _fnc_saveToTemplate;
-["staticAA", ["Flex_CUP_AAF_Stinger_AA_pod", 1, "Flex_CUP_AAF_ZU23", 3]] call _fnc_saveToTemplate;
+["staticAA", ["Flex_CUP_AAF_Stinger_AA_pod", "Flex_CUP_AAF_ZU23"]] call _fnc_saveToTemplate;
 ["staticMortars", call {
     if (tierWar < 2) then {
-        ["Flex_CUP_AAF_Mortar", 1]
+        ["Flex_CUP_AAF_Mortar"]
     } else {
-        ["Flex_CUP_USA_M252", 1]
+        ["Flex_CUP_USA_M252"]
     };
 }] call _fnc_saveToTemplate;
 ["staticHowitzers", call {
     if (tierWar < 2) then {
-        ["Flex_CUP_AAF_D30", 1]
+        ["Flex_CUP_AAF_D30"]
     } else {
         ["Flex_CUP_USA_M119"]
     };
@@ -187,8 +187,8 @@
 ["mortarMagazineSmoke", "8Rnd_82mm_Mo_Smoke_white"] call _fnc_saveToTemplate;
 ["mortarMagazineFlare", "8Rnd_82mm_Mo_Flare_white"] call _fnc_saveToTemplate;
 
-["minefieldAT", ["CUP_Mine", 1]] call _fnc_saveToTemplate;
-["minefieldAPERS", ["APERSMine", 1]] call _fnc_saveToTemplate;
+["minefieldAT", ["CUP_Mine"]] call _fnc_saveToTemplate;
+["minefieldAPERS", ["APERSMine"]] call _fnc_saveToTemplate;
 
 #include "CUP_Vehicle_Attributes.sqf"
 

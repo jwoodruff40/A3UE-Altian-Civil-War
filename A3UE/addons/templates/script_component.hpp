@@ -1,2 +1,2 @@
 #define COMPONENT templates
-#include "\x\A3UE\addons\core\Includes\script_mod.hpp"
+#include "\x\a3ue_cup_acw\addons\core\Includes\script_mod.hpp"
